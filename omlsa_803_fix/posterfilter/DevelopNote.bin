@@ -1,0 +1,5 @@
+2018/12/21 Om-lsa algorithm, test result: 5.638ms per frame(126.855 M clk).
+Change the libm.a in cdk, solved the problem  powf  cost too much time.
+
+
+

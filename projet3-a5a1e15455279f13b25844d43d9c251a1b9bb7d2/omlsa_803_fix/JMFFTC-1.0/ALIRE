@@ -1,0 +1,51 @@
+JMFFT (emulation des transformees de Fourier CRAY) (c) CNRS/IDRIS 1999.
+ 
+C'est une bibliotheque de sous-programmes de transformees de Fourier ecrite
+par Jean-Marie Teuler (CNRS/IDRIS, France), emulant la plupart des
+sous-programmes de transformees de Fourier de la bibliotheque SCILIB de CRAY.
+
+On y trouvera les sous-programmes de la SCILIB suivants :
+
+  Nom         Fonction
+  ----------------------------------------------------
+  CCFFT       1D complexe-complexe
+  CCFFTM      1D multiple complexe-complexe
+  CCFFT2D     2D complexe-complexe
+  CCFFT3D     3D complexe-complexe
+  SCFFT       1D reel-complexe
+  SCFFTM      1D multiple reel-complexe
+  SCFFT2D     2D reel-complexe
+  SCFFT3D     3D reel-complexe
+  CSFFT       1D complexe-reel
+  CSFFTM      1D multiple complexe-reel
+  CSFFT2D     2D complexe-reel
+  CSFFT3D     3D complexe-reel
+  CFFTMLT     1D multiple complexe-complexe (obsolete)
+  RFFTMLT     1D multiple complexe-reel et
+                          reel-complexe (obsolete)
+  CFTFAX      Factorisation pour CFFTMLT
+  FFTFAX      Factorisation pour RFFTMLT
+  ----------------------------------------------------
+
+  Ce repertoire contient :
+    * ce fichier "ALIRE" ;
+    * un fichier "REVISIONS" contenant une breve description des modifications
+      et/ou ajouts apportes a JMFFT depuis son origine ;
+    * un repertoire "src" contenant les sources des sous-programmes ;
+    * un repertoire "arch" contenant des fichiers makefiles d'inclusion
+      dependant des plateformes.
+
+  L'installation de la bibliotheque libjmfft.a se fait en deux etapes :
+
+    1) cd JMFFTC-1.0/arch ; ln -s Make.inc.ARCH Make.inc
+       (ou ARCH doit etre substitue par le nom de l'architecture de la machine cible)
+
+    2) cd .. ;  make
+       (pour creer la bibliotheque libjmfft.a)
+
+Remarque : Pour la documentation, je vous prie de consulter celle
+           pour Fortran a l'adresse :
+           <http://www.idris.fr/data/publications/JMFFT/Manuel/Menu.html>
+
+Contact : Jalel.Chergui@idris.fr
+          CNRS/IDRIS, Bat. 506, BP167, F-91403 Orsay cedex, France

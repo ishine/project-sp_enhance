@@ -1,0 +1,18 @@
+############################ -*- Mode: Makefile -*- ###########################
+## Make.inc.SX5 --- Options du compilateur
+## 
+## Auteur          : Jalel Chergui (CNRS/IDRIS) <Jalel.Chergui@idris.fr>
+## Créé le         : Mon Jun 19 14:42:02 2000
+## Dern. mod. par  : Jalel Chergui (CNRS/IDRIS) <Jalel.Chergui@idris.fr>
+## Dern. mod. le   : Mon Jun 19 14:47:09 2000
+###############################################################################
+
+OPT = -h 2
+PROF = -p
+DEBUG = -g2
+CFLAGS = $(OPT) -c
+AR = ar
+ARFLAGS = rv
+RM = rm
+RMFLAGS = -f
+
